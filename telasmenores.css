@@ -1,0 +1,14 @@
+header {
+    border-radius: 0px;
+}
+
+/*Main*/
+#divmain {
+    flex-flow: column;
+    border-radius: 0px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#itemsmain {}
