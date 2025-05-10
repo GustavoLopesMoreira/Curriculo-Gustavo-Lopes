@@ -12,3 +12,37 @@ header {
 }
 
 #itemsmain {}
+
+/*Habilidades*/
+
+#habilidades {
+    border-radius: 0px;
+}
+
+#habilidades>h1 {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+#habilidades>ul>li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: white;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Contatos*/
+
+#contatos {
+    border-radius: 0px;
+}
+
+#contatos>h1 {
+    font-size: 1.8em;
+}
+
+#contatos>ul>li {}
+
+#contatos>ul>li>a {}
