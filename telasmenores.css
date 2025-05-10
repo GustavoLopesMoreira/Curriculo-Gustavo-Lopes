@@ -1,5 +1,6 @@
 header {
     border-radius: 0px;
+    width: 390px;
 }
 
 /*Main*/
@@ -9,36 +10,54 @@ header {
     text-align: center;
     align-items: center;
     padding: 10px;
+    width: 360px;
 }
 
 #itemsmain {
     font-size: 1em;
 }
+/*Informações*/
 
-/*Habilidades*/
-
-#habilidades {
+#divinformaçoes {
+    width: 390px;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 10px;
     border-radius: 0px;
 }
 
-#habilidades>h1 {
-    font-size: 1.5em;
-    padding: 10px;
+/*Habilidades*/
+
+#divhabilidades {
+    border-radius: 0px;
+    gap: 8px;
+    width: 392px;
 }
 
-#habilidades>ul>li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    color: white;
-    list-style: none;
-    text-align: center;
-    padding: 10px;
+#divhabilidades>h1 {
+ font-size: 2em;
 }
 
+#itemhabilidades {
+   font-size: 1.2em;
+   text-align: center;
+}
+
+
+ul>li {  
+}
+
+/* Currículo */
+
+#divcurriculo {
+    border-radius: 0px;
+    width: 350px;
+}
 /*Contatos*/
 
 #contatos {
     border-radius: 0px;
+    width: 390px;
 }
 
 #contatos>h1 {
@@ -48,3 +67,4 @@ header {
 #contatos>ul>li {}
 
 #contatos>ul>li>a {}
+

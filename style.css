@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -16,11 +17,10 @@ header {
     max-width: 1400px;
     margin: auto;
     margin-top: 8px;
-    box-shadow: 3px 3px 3px  black
+    box-shadow: 3px 3px 3px black
 }
 
 h1 {
-    font-family: ;
     font-size: 2.5em;
     color: white;
     text-align: center;
@@ -43,14 +43,13 @@ nav>ul {
 }
 
 nav>ul>li>a {
-    font-family: ;
     font-size: 1em;
     color: #fff;
     text-decoration: none;
 }
 
 nav>ul>li>a:hover {
-    background-color: rgb(1, 75, 160);
+    background-color: rgb(2, 2, 2);
     border-radius: 8px;
     padding: 5px;
 }
@@ -64,41 +63,87 @@ nav>ul>li>a:hover {
     margin-top: 20px;
     display: flex;
     flex-flow: row;
-    box-shadow: 3px 3px 3px  black
+    box-shadow: 3px 3px 3px black
 }
 
 #itemsmain {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.4em;
     color: #fff;
     padding: 15px;
     text-align: ;
 }
 
-/*Habilidades*/
+/*Informações*/
 
-#habilidades {
+#divinformaçoes {
     background-color: rgb(95, 95, 95);
     max-width: 900px;
     margin: auto;
     margin-top: 20px;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+    align-items: center;
     border-radius: 15px;
-    box-shadow: 3px 3px 3px  black
+    box-shadow: 3px 3px 3px black;
+    gap: 30px;
+    color: #fff;
 }
 
-#habilidades>h1 {
+/*Habilidades*/
+
+#divhabilidades {
+    background-color: rgb(95, 95, 95);
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px black;
+    gap: 30px;
+}
+
+#divhabilidades>h1 {
+    font-size: 2em;
     padding: 10px;
 }
 
-#habilidades>ul>li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.6em;
+#itemhabilidades {
+    background-color: rgb(61, 61, 61);
+    font-size: 1.2em;
     color: white;
-    list-style: none;
-    text-align: center;
+    box-shadow: 2px 2px 2px black;
     padding: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.4s ease;
+}
+
+#itemhabilidades>ul>li {
+    list-style-type: none;
+}
+
+#itemhabilidades:hover {
+    transform: translateY(-5px);
+}
+
+/* Currículo */
+
+#divcurriculo {
+    background-color: rgb(95, 95, 95);
+    font-size: 1.3em;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px black;
+    gap: 10px;
+    padding: 20px;
 }
 
 /*Contatos*/
@@ -111,7 +156,7 @@ nav>ul>li>a:hover {
     display: flex;
     flex-flow: column;
     border-radius: 15px;
-    box-shadow: 3px 3px 3px  black
+    box-shadow: 3px 3px 3px black
 }
 
 #contatos>h1 {
@@ -119,7 +164,6 @@ nav>ul>li>a:hover {
 }
 
 #contatos>ul>li {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6em;
     color: white;
     list-style: none;
