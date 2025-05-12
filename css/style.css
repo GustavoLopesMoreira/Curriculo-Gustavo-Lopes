@@ -117,6 +117,7 @@ nav>ul>li>a:hover {
     padding: 10px;
     margin-bottom: 15px;
     transition: transform 0.4s ease;
+    width: 150px;
 }
 
 #itemhabilidades>ul>li {

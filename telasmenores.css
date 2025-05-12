@@ -1,6 +1,6 @@
 header {
     border-radius: 0px;
-    width: 390px;
+    width: 400px;
 }
 
 /*Main*/
@@ -29,20 +29,25 @@ header {
 /*Habilidades*/
 
 #divhabilidades {
+    width: 400px;
     border-radius: 0px;
-    gap: 8px;
-    width: 392px;
+    gap: 30px;
+    
 }
 
 #divhabilidades>h1 {
- font-size: 2em;
+ font-size: 1.6em;
 }
 
 #itemhabilidades {
    font-size: 1.2em;
    text-align: center;
+   width: 200px;
 }
 
+#itemhabilidades>h1{
+    font-size: 1.6em;
+}
 
 ul>li {  
 }
