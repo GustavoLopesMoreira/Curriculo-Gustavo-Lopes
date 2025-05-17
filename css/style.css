@@ -1,178 +1,215 @@
-/* */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --azul1: rgb(35, 90, 141);
+    --azul2: rgb(27, 67, 105);
 }
 
 body {
     background-color: rgb(173, 173, 173);
 }
 
-/* Header */
+/* Celulares */
+@media (max-width: 480px) {
 
-header {
-    background-color: rgb(82, 82, 82);
-    border-radius: 20px;
-    max-width: 1400px;
-    margin: auto;
-    margin-top: 8px;
-    box-shadow: 3px 3px 3px black
+    /* Header */
+    header {
+        background-color: var(--azul1);
+        border-radius: 0px;
+        margin: auto;
+        margin-top: 8px;
+        box-shadow: 2px 2px 2px 1px black
+    }
+
+    h1 {
+        font-size: 3em;
+        color: white;
+        text-align: center;
+    }
+
+    h1>a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav>ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    nav>ul>li>a {
+        font-size: 1.1em;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    nav>ul>li>a:hover {
+        background-color: var(--azul2);
+        border-radius: 8px;
+        padding: 5px;
+    }
+
+    /* Main */
+    #divmain {
+        background-color: var(--azul1);
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 2px 2px 2px 1px black;
+        padding: 20px;
+    }
+
+    #fotomain {
+        border: 5px solid var(--azul2);
+        margin: auto;
+    }
+
+    #itemsmain {
+        background-color: var(--azul2);
+        font-size: 1.3em;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    /*Informações*/
+    #divinformaçoes {
+        background-color: var(--azul1);
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        box-shadow: 2px 2px 2px 1px black;
+        padding: 30px;
+        color: #fff;
+    }
+
+    #fotoinfos {
+        border: 5px solid var(--azul2);
+        margin: auto;
+    }
+
+    #itemsinfos {
+        background-color: var(--azul2);
+        font-size: 1.3em;
+        color: #fff;
+        text-align: center;
+        margin-top: 20px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    #divinformaçoes ul li{
+        list-style: inside circle;
+    }
+
+    /*Habilidades*/
+    #divhabilidades {
+        background-color:var(--azul1);
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px black;
+        gap: 30px;
+    }
+
+    #divhabilidades>h1 {
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    #itemhabilidades {
+        background-color: rgb(61, 61, 61);
+        font-size: 1.2em;
+        color: white;
+        box-shadow: 2px 2px 2px black;
+        padding: 10px;
+        margin-bottom: 15px;
+        transition: transform 0.4s ease;
+        width: 150px;
+    }
+
+    #itemhabilidades>ul>li {
+        list-style-type: none;
+    }
+
+    #itemhabilidades:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Currículo */
+    #divcurriculo {
+        background-color: rgb(95, 95, 95);
+        font-size: 1.3em;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px black;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    /*Contatos*/
+    #contatos {
+        background-color: rgb(95, 95, 95);
+        max-width: 900px;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-flow: column;
+        border-radius: 15px;
+        box-shadow: 3px 3px 3px black
+    }
+
+    #contatos>h1 {
+        padding: 10px;
+    }
+
+    #contatos>ul>li {
+        font-size: 1.6em;
+        color: white;
+        list-style: none;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #contatos>ul>li>a {
+        text-decoration: none;
+        color: #fff;
+    }
 }
 
-h1 {
-    font-size: 2.5em;
-    color: white;
-    text-align: center;
-}
+/* Ipads e Tablets*/
+@media (max-width: 768px) {}
 
-h1>a {
-    text-decoration: none;
-    color: white;
-}
+/* Telas Pequenas */
+@media (max-width: 1024px) {}
 
-nav {
-    padding: 10px;
-}
-
-nav>ul {
-    display: flex;
-    flex-direction: row wrap;
-    justify-content: space-around;
-    list-style: none;
-}
-
-nav>ul>li>a {
-    font-size: 1em;
-    color: #fff;
-    text-decoration: none;
-}
-
-nav>ul>li>a:hover {
-    background-color: rgb(2, 2, 2);
-    border-radius: 8px;
-    padding: 5px;
-}
-
-/* Main */
-
-#divmain {
-    background-color: rgb(95, 95, 95);
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-flow: row;
-    box-shadow: 3px 3px 3px black
-}
-
-#itemsmain {
-    font-size: 1.4em;
-    color: #fff;
-    padding: 15px;
-    text-align: ;
-}
-
-/*Informações*/
-
-#divinformaçoes {
-    background-color: rgb(95, 95, 95);
-    max-width: 900px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px black;
-    gap: 30px;
-    color: #fff;
-}
-
-/*Habilidades*/
-
-#divhabilidades {
-    background-color: rgb(95, 95, 95);
-    max-width: 900px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px black;
-    gap: 30px;
-}
-
-#divhabilidades>h1 {
-    font-size: 2em;
-    padding: 10px;
-}
-
-#itemhabilidades {
-    background-color: rgb(61, 61, 61);
-    font-size: 1.2em;
-    color: white;
-    box-shadow: 2px 2px 2px black;
-    padding: 10px;
-    margin-bottom: 15px;
-    transition: transform 0.4s ease;
-    width: 150px;
-}
-
-#itemhabilidades>ul>li {
-    list-style-type: none;
-}
-
-#itemhabilidades:hover {
-    transform: translateY(-5px);
-}
-
-/* Currículo */
-
-#divcurriculo {
-    background-color: rgb(95, 95, 95);
-    font-size: 1.3em;
-    max-width: 900px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px black;
-    gap: 10px;
-    padding: 20px;
-}
-
-/*Contatos*/
-
-#contatos {
-    background-color: rgb(95, 95, 95);
-    max-width: 900px;
-    margin: auto;
-    margin-top: 20px;
-    display: flex;
-    flex-flow: column;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px black
-}
-
-#contatos>h1 {
-    padding: 10px;
-}
-
-#contatos>ul>li {
-    font-size: 1.6em;
-    color: white;
-    list-style: none;
-    text-align: center;
-    padding: 10px;
-}
-
-#contatos>ul>li>a {
-    text-decoration: none;
-    color: #fff;
-}
+/* Telas Grandes */
+@media (min-width: 1025px) {}
