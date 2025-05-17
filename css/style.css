@@ -28,39 +28,39 @@ body {
         box-shadow: var(--sombra-padrao);
     }
 
-    header > h1 {
+    header>h1 {
         font-size: 3em;
         color: white;
         text-align: center;
     }
 
-    header > h1 > a {
+    header>h1>a {
         text-decoration: none;
         color: white;
     }
 
-    header > h1 > a:hover {
+    header>h1>a:hover {
         text-shadow: var(--sombra-texto);
     }
 
-    header > nav {
+    header>nav {
         padding: 10px;
     }
 
-    header > nav > ul {
+    header>nav>ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         list-style: none;
     }
 
-    header > nav > ul > li > a {
+    header>nav>ul>li>a {
         font-size: 1.1em;
         color: #fff;
         text-decoration: none;
     }
 
-    header > nav > ul > li > a:hover {
+    header>nav>ul>li>a:hover {
         background-color: var(--azul2);
         text-shadow: var(--sombra-texto);
         border-radius: 8px;
@@ -103,7 +103,7 @@ body {
         color: #fff;
     }
 
-    #divinfos > h1 {
+    #divinfos>h1 {
         width: 480px;
         margin: 20px auto;
         padding: 20px;
@@ -127,7 +127,7 @@ body {
         text-align: center;
     }
 
-    #divinfos ul > li {
+    #divinfos ul>li {
         list-style: inside circle;
     }
 
@@ -142,7 +142,7 @@ body {
         box-shadow: var(--sombra-padrao);
     }
 
-    #divhabilidades > h1 {
+    #divhabilidades>h1 {
         margin: 20px auto;
         padding: 20px;
         background-color: var(--azul2);
@@ -160,12 +160,12 @@ body {
         transition: transform 0.5s ease;
     }
 
-    .itemshabilidades > h1 {
+    .itemshabilidades>h1 {
         font-size: 2em;
         color: white;
     }
 
-    .itemshabilidades ul > li {
+    .itemshabilidades ul>li {
         list-style-type: none;
         font-size: 1.5em;
         color: white;
@@ -186,7 +186,7 @@ body {
         box-shadow: var(--sombra-padrao);
     }
 
-    #divcurriculo > h1 {
+    #divcurriculo>h1 {
         width: 480px;
         margin: 20px auto;
         padding: 20px;
@@ -196,7 +196,7 @@ body {
         box-shadow: var(--sombra-padrao);
     }
 
-    #divcurriculo > p {
+    #divcurriculo>p {
         margin: 20px auto;
         font-size: 1.5em;
         color: white;
@@ -213,7 +213,7 @@ body {
         box-shadow: var(--sombra-padrao);
     }
 
-    #divcontatos > h1 {
+    #divcontatos>h1 {
         width: 480px;
         margin: 20px auto;
         padding: 20px;
@@ -223,16 +223,64 @@ body {
         box-shadow: var(--sombra-padrao);
     }
 
-    #divcontatos ul > li {
+    #divcontatos ul>li {
         padding: 20px;
         list-style: none;
         text-align: center;
     }
 }
 
-
 /* Ipads e Tablets*/
-@media (max-width: 768px) {}
+@media (min-width:481px) and (max-width: 1023px) {
+   
+    /* Header */
+    header {
+        max-width: 800px;
+        margin: 8px auto;
+        background-color: var(--azul1);
+        border-radius: 0px;
+        box-shadow: var(--sombra-padrao);
+    }
+
+    header>h1 {
+        font-size: 3em;
+        color: white;
+        text-align: center;
+    }
+
+    header>h1>a {
+        text-decoration: none;
+        color: white;
+    }
+
+    header>h1>a:hover {
+        text-shadow: var(--sombra-texto);
+    }
+
+    header>nav {
+        padding: 10px;
+    }
+
+    header>nav>ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    header>nav>ul>li>a {
+        font-size: 1.1em;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    header>nav>ul>li>a:hover {
+        background-color: var(--azul2);
+        text-shadow: var(--sombra-texto);
+        border-radius: 8px;
+        padding: 5px;
+    }
+}
 
 /* Telas Pequenas */
 @media (max-width: 1024px) {}
