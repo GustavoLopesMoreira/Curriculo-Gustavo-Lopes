@@ -1,12 +1,16 @@
+/* Padrões Globais */
 * {
     margin: 0px;
     padding: 0px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: #fff;
 }
 
 :root {
     --azul1: rgb(35, 90, 141);
     --azul2: rgb(27, 67, 105);
+    --sombra-padrao: 2px 2px 2px 1px black;
+    --sombra-texto: 3px 3px 3px black;
 }
 
 body {
@@ -18,192 +22,214 @@ body {
 
     /* Header */
     header {
+        margin: 8px auto;
         background-color: var(--azul1);
         border-radius: 0px;
-        margin: auto;
-        margin-top: 8px;
-        box-shadow: 2px 2px 2px 1px black
+        box-shadow: var(--sombra-padrao);
     }
 
-    h1 {
+    header > h1 {
         font-size: 3em;
         color: white;
         text-align: center;
     }
 
-    h1>a {
+    header > h1 > a {
         text-decoration: none;
         color: white;
     }
 
-    nav {
+    header > h1 > a:hover {
+        text-shadow: var(--sombra-texto);
+    }
+
+    header > nav {
         padding: 10px;
     }
 
-    nav>ul {
+    header > nav > ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         list-style: none;
     }
 
-    nav>ul>li>a {
+    header > nav > ul > li > a {
         font-size: 1.1em;
         color: #fff;
         text-decoration: none;
     }
 
-    nav>ul>li>a:hover {
+    header > nav > ul > li > a:hover {
         background-color: var(--azul2);
+        text-shadow: var(--sombra-texto);
         border-radius: 8px;
         padding: 5px;
     }
 
     /* Main */
     #divmain {
-        background-color: var(--azul1);
-        margin: auto;
-        margin-top: 20px;
+        margin: 30px auto;
         display: flex;
         flex-direction: column;
-        box-shadow: 2px 2px 2px 1px black;
-        padding: 20px;
+        background-color: var(--azul1);
+        box-shadow: var(--sombra-padrao);
     }
 
     #fotomain {
+        margin: 20px auto;
         border: 5px solid var(--azul2);
-        margin: auto;
     }
 
     #itemsmain {
+        margin: 20px auto;
+        padding: 10px;
         background-color: var(--azul2);
         font-size: 1.3em;
         color: #fff;
         text-align: center;
-        padding: 10px;
-        margin-top: 10px;
-        border-radius: 5px;
     }
 
-    /*Informações*/
-    #divinformaçoes {
-        background-color: var(--azul1);
-        margin: auto;
-        margin-top: 20px;
+    /* Informações */
+    #divinfos {
+        margin: 30px auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+        background-color: var(--azul1);
         text-align: center;
-        box-shadow: 2px 2px 2px 1px black;
-        padding: 30px;
+        box-shadow: var(--sombra-padrao);
         color: #fff;
     }
 
+    #divinfos > h1 {
+        width: 480px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: var(--azul2);
+        font-size: 2em;
+        text-align: center;
+        box-shadow: var(--sombra-padrao);
+    }
+
     #fotoinfos {
+        margin: 10px auto;
         border: 5px solid var(--azul2);
-        margin: auto;
     }
 
     #itemsinfos {
+        margin: 20px auto;
+        padding: 20px;
         background-color: var(--azul2);
         font-size: 1.3em;
         color: #fff;
         text-align: center;
-        margin-top: 20px;
-        border-radius: 5px;
-        padding: 10px;
     }
 
-    #divinformaçoes ul li{
+    #divinfos ul > li {
         list-style: inside circle;
     }
 
-    /*Habilidades*/
+    /* Habilidades */
     #divhabilidades {
-        background-color:var(--azul1);
-        margin: auto;
-        margin-top: 20px;
+        margin: 30px auto;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        border-radius: 15px;
-        box-shadow: 3px 3px 3px black;
-        gap: 30px;
+        background-color: var(--azul1);
+        box-shadow: var(--sombra-padrao);
     }
 
-    #divhabilidades>h1 {
+    #divhabilidades > h1 {
+        margin: 20px auto;
+        padding: 20px;
+        background-color: var(--azul2);
         font-size: 2em;
-        padding: 10px;
+        text-align: center;
+        box-shadow: var(--sombra-padrao);
     }
 
-    #itemhabilidades {
-        background-color: rgb(61, 61, 61);
-        font-size: 1.2em;
+    .itemshabilidades {
+        width: 250px;
+        margin: 20px auto;
+        padding: 10px;
+        background-color: var(--azul2);
+        box-shadow: var(--sombra-padrao);
+        transition: transform 0.5s ease;
+    }
+
+    .itemshabilidades > h1 {
+        font-size: 2em;
         color: white;
-        box-shadow: 2px 2px 2px black;
-        padding: 10px;
-        margin-bottom: 15px;
-        transition: transform 0.4s ease;
-        width: 150px;
     }
 
-    #itemhabilidades>ul>li {
+    .itemshabilidades ul > li {
         list-style-type: none;
+        font-size: 1.5em;
+        color: white;
     }
 
-    #itemhabilidades:hover {
-        transform: translateY(-5px);
+    .itemshabilidades:hover {
+        transform: translateY(-7px);
     }
 
     /* Currículo */
     #divcurriculo {
-        background-color: rgb(95, 95, 95);
-        font-size: 1.3em;
-        max-width: 900px;
-        margin: auto;
-        margin-top: 20px;
+        margin: 30px auto;
         display: flex;
-        flex-flow: column wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        text-align: center;
-        color: white;
-        border-radius: 15px;
-        box-shadow: 3px 3px 3px black;
-        gap: 10px;
+        background-color: var(--azul1);
+        box-shadow: var(--sombra-padrao);
+    }
+
+    #divcurriculo > h1 {
+        width: 480px;
+        margin: 20px auto;
         padding: 20px;
+        background-color: var(--azul2);
+        font-size: 2em;
+        text-align: center;
+        box-shadow: var(--sombra-padrao);
     }
 
-    /*Contatos*/
-    #contatos {
-        background-color: rgb(95, 95, 95);
-        max-width: 900px;
-        margin: auto;
-        margin-top: 20px;
-        display: flex;
-        flex-flow: column;
-        border-radius: 15px;
-        box-shadow: 3px 3px 3px black
-    }
-
-    #contatos>h1 {
-        padding: 10px;
-    }
-
-    #contatos>ul>li {
-        font-size: 1.6em;
+    #divcurriculo > p {
+        margin: 20px auto;
+        font-size: 1.5em;
         color: white;
+        text-align: center;
+    }
+
+    /* Contatos */
+    #divcontatos {
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: var(--azul1);
+        box-shadow: var(--sombra-padrao);
+    }
+
+    #divcontatos > h1 {
+        width: 480px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: var(--azul2);
+        font-size: 2em;
+        text-align: center;
+        box-shadow: var(--sombra-padrao);
+    }
+
+    #divcontatos ul > li {
+        padding: 20px;
         list-style: none;
         text-align: center;
-        padding: 10px;
-    }
-
-    #contatos>ul>li>a {
-        text-decoration: none;
-        color: #fff;
     }
 }
+
 
 /* Ipads e Tablets*/
 @media (max-width: 768px) {}
