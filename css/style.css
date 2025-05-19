@@ -5,8 +5,8 @@
 }
 
 :root {
-    --azul1: rgb(35, 90, 141);
-    --azul2: rgb(27, 67, 105);
+    --cor1: rgb(35, 90, 141);
+    --cor2: rgb(27, 67, 105);
     --sombra-padrao: 2px 2px 2px 1px black;
     --sombra-texto: 3px 3px 3px black;
 }
@@ -21,7 +21,7 @@ body {
 /* Header */
 header {
     margin: 8px auto;
-    background-color: var(--azul1);
+    background-color: var(--cor1);
     border-radius: 0px;
     box-shadow: var(--sombra-padrao);
 }
@@ -58,7 +58,7 @@ header>nav>ul>li>a {
 }
 
 header>nav>ul>li>a:hover {
-    background-color: var(--azul2);
+    background-color: var(--cor2);
     text-shadow: var(--sombra-texto);
     border-radius: 8px;
     padding: 5px;
@@ -69,19 +69,19 @@ header>nav>ul>li>a:hover {
     margin: 30px auto;
     display: flex;
     flex-direction: column;
-    background-color: var(--azul1);
+    background-color: var(--cor1);
     box-shadow: var(--sombra-padrao);
 }
 
 #fotomain {
     margin: 20px auto;
-    border: 5px solid var(--azul2);
+    border: 5px solid var(--cor2);
 }
 
 #itemsmain {
     margin: 20px auto;
     padding: 10px;
-    background-color: var(--azul2);
+    background-color: var(--cor2);
     font-size: 1.3em;
     text-align: center;
 }
@@ -93,15 +93,14 @@ header>nav>ul>li>a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-color: var(--azul1);
+    background-color: var(--cor1);
     box-shadow: var(--sombra-padrao);
 }
 
 #divinfos>h1 {
-    width: 480px;
     margin: 20px auto;
     padding: 10px;
-    background-color: var(--azul2);
+    background-color: var(--cor2);
     font-size: 2em;
     text-align: center;
     box-shadow: var(--sombra-padrao);
@@ -109,13 +108,13 @@ header>nav>ul>li>a:hover {
 
 #fotoinfos {
     margin: 10px auto;
-    border: 5px solid var(--azul2);
+    border: 5px solid var(--cor2);
 }
 
 #itemsinfos {
     margin: 20px auto;
     padding: 20px;
-    background-color: var(--azul2);
+    background-color: var(--cor2);
     font-size: 1.3em;
     text-align: center;
 }
@@ -131,14 +130,14 @@ header>nav>ul>li>a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--azul1);
+    background-color: var(--cor1);
     box-shadow: var(--sombra-padrao);
 }
 
 #divhabilidades>h1 {
     margin: 20px auto;
     padding: 20px;
-    background-color: var(--azul2);
+    background-color: var(--cor2);
     font-size: 2em;
     text-align: center;
     box-shadow: var(--sombra-padrao);
@@ -148,7 +147,7 @@ header>nav>ul>li>a:hover {
     width: 250px;
     margin: 20px auto;
     padding: 10px;
-    background-color: var(--azul2);
+    background-color: var(--cor2);
     box-shadow: var(--sombra-padrao);
     transition: transform 0.5s ease;
 }
@@ -174,15 +173,14 @@ header>nav>ul>li>a:hover {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: var(--azul1);
+    background-color: var(--cor1);
     box-shadow: var(--sombra-padrao);
 }
 
 #divcurriculo>h1 {
-    width: 480px;
     margin: 20px auto;
     padding: 20px;
-    background-color: var(--azul2);
+    background-color: var(--cor2);
     font-size: 2em;
     text-align: center;
     box-shadow: var(--sombra-padrao);
@@ -204,15 +202,14 @@ header>nav>ul>li>a:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: var(--azul1);
+    background-color: var(--cor1);
     box-shadow: var(--sombra-padrao);
 }
 
 #divcontatos>h1 {
-    width: 360px;
     margin: 20px auto;
     padding: 20px;
-    background-color: var(--azul2);
+    background-color: var(--cor2);
     font-size: 2em;
     text-align: center;
     box-shadow: var(--sombra-padrao);
@@ -225,46 +222,44 @@ header>nav>ul>li>a:hover {
 }
 
 /* Ipads e Tablets*/
-@media (min-width:481px) and (max-width: 768px) {
+@media (min-width:501px) and (max-width: 768px) {
 
     /* Header */
     header {
-        max-width: 650px;
-        border-radius: 20px;
+       width: 95vw; 
+       border-radius: 10px;
     }
 
 
     /* Main */
     #divmain {
-        max-width: 550px;
+        width: 82vw;
         padding: 10px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     /* Informações */
     #divinfos {
-        max-width: 550px;
-        border-radius: 10px;
+        width: 82vw;
+        border-radius: 5px;
     }
 
     /* Habilidades */
     #divhabilidades {
-        max-width: 550px;
-        padding: 10px;
-        border-radius: 10px;
+        width: 82vw;
+        border-radius: 5px;
     }
 
     /* Currículo */
     #divcurriculo {
-        max-width: 550px;
-        border-radius: 10px;
+        width: 82vw;
+        border-radius: 5px;
     }
 
     /* Contatos */
     #divcontatos {
-        max-width: 550px;
-        padding: 10px;
-        border-radius: 10px;
+        width: 82vw;
+        border-radius: 5px;
     }
 
 }
@@ -274,47 +269,91 @@ header>nav>ul>li>a:hover {
 
     /* Header */
     header {
-        max-width: 950px;
-        border-radius: 20px;
+        width: 95vw;
+        border-radius: 5px;
     }
 
     /* Main */
     #divmain {
-        max-width: 850px;
+        width: 82vw;
         flex-direction: row;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     /* Informações */
     #divinfos {
-        max-width: 850px;
+        width: 82vw;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
+    }
+
+    /* Habilidades */
+    #divhabilidades {
+        width: 82vw;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    /* Currículo */
+    #divcurriculo {
+        width: 82vw;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    /* Contatos */
+    #divcontatos {
+        width: 82vw;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+}
+
+/* Telas Grandes */
+@media (min-width: 1025px) {
+
+    /* Header */
+    header {
+        max-width: 1025px;
+        border-radius: 5px;
+    }
+
+    /* Main */
+    #divmain {
+       max-width: 850px;
+        flex-direction: row;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    /* Informações */
+    #divinfos {
+       max-width: 850px;
+        padding: 20px;
+        border-radius: 5px;
     }
 
     /* Habilidades */
     #divhabilidades {
         max-width: 850px;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     /* Currículo */
     #divcurriculo {
         max-width: 850px;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     /* Contatos */
     #divcontatos {
         max-width: 850px;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
 }
-
-/* Telas Grandes */
-@media (min-width: 1025px) {}
