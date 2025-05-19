@@ -221,13 +221,23 @@ header>nav>ul>li>a:hover {
     text-align: center;
 }
 
+/* Mensagem Para Telas Grandes */
+.mensagem {
+    display: none;
+    padding: 20px;
+    background-color: var(--cor2);
+    font-size: 1.5em;
+    text-align: center;
+    box-shadow: var(--sombra-texto);
+}
+
 /* Ipads e Tablets*/
 @media (min-width:501px) and (max-width: 768px) {
 
     /* Header */
     header {
-       width: 95vw; 
-       border-radius: 10px;
+        width: 95vw;
+        border-radius: 10px;
     }
 
 
@@ -309,6 +319,12 @@ header>nav>ul>li>a:hover {
         border-radius: 5px;
     }
 
+    /* Mensagem Para Telas Grandes */
+    .mensagem {
+        margin: auto;
+        display: block;
+    }
+
 }
 
 /* Telas Grandes */
@@ -322,7 +338,7 @@ header>nav>ul>li>a:hover {
 
     /* Main */
     #divmain {
-       max-width: 850px;
+        max-width: 850px;
         flex-direction: row;
         padding: 20px;
         border-radius: 5px;
@@ -330,7 +346,7 @@ header>nav>ul>li>a:hover {
 
     /* Informações */
     #divinfos {
-       max-width: 850px;
+        max-width: 850px;
         padding: 20px;
         border-radius: 5px;
     }
@@ -354,6 +370,12 @@ header>nav>ul>li>a:hover {
         max-width: 850px;
         padding: 20px;
         border-radius: 5px;
+    }
+
+    /* Mensagem Para Telas Grandes */
+    .mensagem {
+        margin: auto;
+        display: block;
     }
 
 }

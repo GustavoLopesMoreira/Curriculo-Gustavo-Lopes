@@ -12,3 +12,5 @@ if (nome == null) {
                 Tenho me dedicado ao estudo de programação há dois anos, inicialmente por meio de cursos online.
                 Este site foi criado para apresentar e divulgar minhas habilidades em programação, que agora também estão sendo desenvolvidas por meio da formação acadêmica.`
 }
+
+
