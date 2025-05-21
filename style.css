@@ -110,7 +110,8 @@ header>nav>ul>li>a:hover {
 
 #fotoinfos {
     margin: 10px auto;
-    border: 5px solid var(--cor2);
+    height: 400px;
+    width: 400px;
 }
 
 #itemsinfos {
