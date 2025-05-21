@@ -117,6 +117,7 @@ header>nav>ul>li>a:hover {
     background-color: var(--cor2);
     font-size: 1.3em;
     text-align: center;
+     box-shadow: var(--sombra-padrao);
 }
 
 #divinfos ul>li {
