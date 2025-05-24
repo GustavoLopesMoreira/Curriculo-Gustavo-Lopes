@@ -21,6 +21,7 @@ body {
 /* Header */
 header {
     margin: auto;
+    width: 100vw;
     padding: 10px;
     background-image: linear-gradient(to left, rgb(37, 107, 173), rgb(27, 67, 105));
     border-radius: 0px;
@@ -55,7 +56,6 @@ header>nav>ul {
 
 header>nav>ul>li>a {
     font-size: 1.2em;
-    padding: 4px;
     text-decoration: none;
     color: #ffffff;
 }
@@ -63,7 +63,6 @@ header>nav>ul>li>a {
 header>nav>ul>li>a:hover {
     text-shadow: var(--sombra-texto);
     border-radius: 8px;
-    padding: 5px;
 }
 
 /* Main */
