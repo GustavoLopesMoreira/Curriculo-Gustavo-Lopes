@@ -8,7 +8,7 @@
     --cor1: rgb(35, 90, 141);
     --cor2: rgb(27, 67, 105);
     --sombra-padrao: 2px 2px 2px 1px black;
-    --sombra-texto: 1px 1px 5px  black;
+    --sombra-texto: 1px 1px 5px black;
 }
 
 body {
@@ -22,9 +22,8 @@ body {
 header {
     margin: auto;
     width: 100vw;
-    padding: 10px;
+    padding: 5px;
     background-image: linear-gradient(to left, rgb(37, 107, 173), rgb(27, 67, 105));
-    border-radius: 0px;
     box-shadow: var(--sombra-padrao);
 }
 
@@ -43,8 +42,7 @@ header>h1>a:hover {
 }
 
 header>nav {
-    padding: 10px;
-
+    padding: 5px;
 }
 
 header>nav>ul {
@@ -55,6 +53,7 @@ header>nav>ul {
 }
 
 header>nav>ul>li>a {
+    padding: 5px;
     font-size: 1.2em;
     text-decoration: none;
     color: #ffffff;
@@ -67,6 +66,7 @@ header>nav>ul>li>a:hover {
 
 /* Main */
 #divmain {
+    width: 100vw;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -89,6 +89,7 @@ header>nav>ul>li>a:hover {
 
 /* Informações */
 #divinfos {
+    width: 100vw;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -128,6 +129,7 @@ header>nav>ul>li>a:hover {
 
 /* Habilidades */
 #divhabilidades {
+    width: 100vw;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -170,6 +172,7 @@ header>nav>ul>li>a:hover {
 
 /* Currículo */
 #divcurriculo {
+    width: 100vw;
     margin: 30px auto;
     padding: 20px;
     display: flex;
@@ -201,6 +204,7 @@ header>nav>ul>li>a:hover {
 
 /* Contatos */
 #divcontatos {
+    width: 100vw;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
