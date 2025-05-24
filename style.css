@@ -1,7 +1,8 @@
 /* Padrões Globais */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,17 +13,19 @@
 }
 
 body {
-    background-color: rgb(241, 241, 241);
+    background-color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    color: #ffffff;
+    color: #fff;
 }
 
-/* Celulares */
-/* Header */
+/* ============================== */
+/*        Header                  */
+/* ============================== */
 header {
-    margin: auto;
     width: 100vw;
+    margin: auto;
     padding: 5px;
+
     background-image: linear-gradient(to left, rgb(37, 107, 173), rgb(27, 67, 105));
     box-shadow: var(--sombra-padrao);
 }
@@ -56,7 +59,7 @@ header>nav>ul>li>a {
     padding: 5px;
     font-size: 1.2em;
     text-decoration: none;
-    color: #ffffff;
+    color: #fff;
 }
 
 header>nav>ul>li>a:hover {
@@ -64,14 +67,18 @@ header>nav>ul>li>a:hover {
     border-radius: 8px;
 }
 
-/* Main */
+/* ============================== */
+/*            Main                */
+/* ============================== */
 #divmain {
     width: 100vw;
     margin: 30px auto;
+    padding: 5px;
+
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to left, rgb(37, 107, 173), rgb(27, 67, 105));
-    box-shadow: var(--sombra-padrao);
+
+    background-color: var(--cor1);
 }
 
 #fotomain {
@@ -82,59 +89,70 @@ header>nav>ul>li>a:hover {
 #itemsmain {
     margin: 20px auto;
     padding: 10px;
+
     background-color: var(--cor2);
     font-size: 1.3em;
     text-align: center;
 }
 
-/* Informações */
+/* ============================== */
+/*         Informações            */
+/* ============================== */
 #divinfos {
     width: 100vw;
     margin: 30px auto;
+    padding: 5px;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    background-image: linear-gradient(to left, rgb(37, 107, 173), rgb(27, 67, 105));
+
+    background-color: var(--cor1);
     box-shadow: var(--sombra-padrao);
+    text-align: center;
 }
 
 #divinfos>h1 {
     margin: 20px auto;
     padding: 10px;
+
     background-color: var(--cor2);
     font-size: 2em;
-    text-align: center;
     box-shadow: var(--sombra-padrao);
 }
 
 #fotoinfos {
-    margin: 10px auto;
-    height: 400px;
-    width: 400px;
+    margin: auto;
+    width: 350px;
+    height: 350px;
 }
 
 #itemsinfos {
     margin: 20px auto;
-    padding: 20px;
+
     background-color: var(--cor2);
-    font-size: 1.3em;
-    text-align: center;
+    font-size: 1.2em;
     box-shadow: var(--sombra-padrao);
 }
 
-#divinfos ul>li {
+#divinfos ul {
     list-style: inside circle;
 }
 
-/* Habilidades */
+/* ============================== */
+/*         Habilidades            */
+/* ============================== */
 #divhabilidades {
     width: 100vw;
     margin: 30px auto;
+    padding: 5px;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+
     background-image: linear-gradient(to left, rgb(37, 107, 173), rgb(27, 67, 105));
     box-shadow: var(--sombra-padrao);
 }
@@ -142,9 +160,9 @@ header>nav>ul>li>a:hover {
 #divhabilidades>h1 {
     margin: 20px auto;
     padding: 20px;
+
     background-color: var(--cor2);
     font-size: 2em;
-    text-align: center;
     box-shadow: var(--sombra-padrao);
 }
 
@@ -152,8 +170,10 @@ header>nav>ul>li>a:hover {
     width: 250px;
     margin: 20px auto;
     padding: 10px;
+
     background-color: var(--cor2);
     box-shadow: var(--sombra-padrao);
+
     transition: transform 0.5s ease;
 }
 
@@ -161,8 +181,11 @@ header>nav>ul>li>a:hover {
     font-size: 2em;
 }
 
+.itemshabilidades ul {
+    list-style: none;
+}
+
 .itemshabilidades ul>li {
-    list-style-type: none;
     font-size: 1.5em;
 }
 
@@ -170,15 +193,19 @@ header>nav>ul>li>a:hover {
     transform: translateY(-7px);
 }
 
-/* Currículo */
+/* ============================== */
+/*           Currículo            */
+/* ============================== */
 #divcurriculo {
     width: 100vw;
     margin: 30px auto;
-    padding: 20px;
+    padding: 10px;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+
     background-image: linear-gradient(to left, rgb(37, 107, 173), rgb(27, 67, 105));
     box-shadow: var(--sombra-padrao);
 }
@@ -186,9 +213,9 @@ header>nav>ul>li>a:hover {
 #divcurriculo>h1 {
     margin: 20px auto;
     padding: 20px;
+
     background-color: var(--cor2);
     font-size: 2em;
-    text-align: center;
     box-shadow: var(--sombra-padrao);
 }
 
@@ -202,13 +229,18 @@ header>nav>ul>li>a:hover {
     color: goldenrod;
 }
 
-/* Contatos */
+/* ============================== */
+/*           Contatos             */
+/* ============================== */
 #divcontatos {
     width: 100vw;
     margin: 30px auto;
+    padding: 5px;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+
     background-image: linear-gradient(to left, rgb(37, 107, 173), rgb(27, 67, 105));
     box-shadow: var(--sombra-padrao);
 }
@@ -216,27 +248,41 @@ header>nav>ul>li>a:hover {
 #divcontatos>h1 {
     margin: 20px auto;
     padding: 20px;
+
     background-color: var(--cor2);
     font-size: 2em;
-    text-align: center;
     box-shadow: var(--sombra-padrao);
+}
+
+#divcontatos ul {
+    list-style: none;
 }
 
 #divcontatos ul>li {
     padding: 20px;
-    list-style: none;
     text-align: center;
 }
 
-/* Mensagem Para Telas Grandes */
+/* ============================== */
+/*   Mensagem para telas grandes  */
+/* ============================== */
 .mensagem {
     display: none;
     padding: 20px;
+
     background-color: var(--cor2);
     font-size: 1.5em;
     text-align: center;
     box-shadow: var(--sombra-texto);
 }
+
+/* Exibir mensagem em telas grandes */
+@media screen and (min-width: 1024px) {
+    .mensagem {
+        display: block;
+    }
+}
+
 
 /* Ipads e Tablets*/
 @media (min-width:501px) and (max-width: 768px) {
