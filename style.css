@@ -22,9 +22,11 @@ body {
 /*        Header                  */
 /* ============================== */
 header {
-    width: 500px;
+    width: 400px;
     margin: auto;
     padding: 5px;
+    align-items: center;
+    justify-content: center;
 
     background-image: linear-gradient(to left, rgb(37, 107, 173), rgb(27, 67, 105));
     box-shadow: var(--sombra-padrao);
@@ -99,7 +101,7 @@ header>nav>ul>li>a:hover {
 /*         Informações            */
 /* ============================== */
 #divinfos {
-    width: 500px;
+    width: 400px;
     margin: 30px auto;
     padding: 5px;
 
