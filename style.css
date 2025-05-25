@@ -21,8 +21,7 @@ body {
 /* ============================== */
 /*        Header                  */
 /* ============================== */
-header {
-    width: 370px;
+header {  
     margin: auto;
     padding: 5px;
     align-items: center;
@@ -73,7 +72,6 @@ header>nav>ul>li>a:hover {
 /*            Main                */
 /* ============================== */
 #divmain {
-    width: 370px;
     margin: 30px auto;
     padding: 5px;
 
