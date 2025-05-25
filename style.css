@@ -22,7 +22,7 @@ body {
 /*        Header                  */
 /* ============================== */
 header {
-    width: 100vw;
+    width: 500px;
     margin: auto;
     padding: 5px;
 
@@ -57,7 +57,7 @@ header>nav>ul {
 
 header>nav>ul>li>a {
     padding: 5px;
-    font-size: 1.2em;
+    font-size: 1em;
     text-decoration: none;
     color: #fff;
 }
@@ -99,7 +99,7 @@ header>nav>ul>li>a:hover {
 /*         Informações            */
 /* ============================== */
 #divinfos {
-    width: 100vw;
+    width: 500px;
     margin: 30px auto;
     padding: 5px;
 
@@ -124,8 +124,8 @@ header>nav>ul>li>a:hover {
 
 #fotoinfos {
     margin: auto;
-    width: 350px;
-    height: 350px;
+    width: 150px;
+    height: 150px;
 }
 
 #itemsinfos {
@@ -285,7 +285,7 @@ header>nav>ul>li>a:hover {
 
 
 /* Ipads e Tablets*/
-@media (min-width:501px) and (max-width: 768px) {
+@media (min-width:601px) and (max-width: 768px) {
 
     /* Header */
     header {}
